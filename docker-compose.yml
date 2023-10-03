@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    command: bundle exec rails s -e production
+    ports:
+      - '0.0.0.0:3000:3000'
